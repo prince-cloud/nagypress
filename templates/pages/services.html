@@ -1,0 +1,453 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="bg-main-light">
+    <div class="clip " style="background-image: url({% static 'images/whatwedo.png' %}' %}); background-size: cover; ">
+        <div class="container-fluid py-5" style="background-color:rgba(71, 43, 77, 0.85);">
+            <div class="container py-5">
+
+                <div class="row">
+                    <div class="d-flex text-center flex-column justify-content-center text-light gap-2">
+                        <h1 class="fw-bolder text-white text-decoration-underline" style="font-size: 62px;">What
+                            We Do</h1>
+                        <p class="lead text-light">
+                            We are into website developent, graphic designing, printing and supply of customized
+                            t-shirst
+                            , cloth, laboratory coats, books, receipts, pens, key hlders, wrist bands, posters,
+                            banners,
+                            invitation cards, brooches, ID cafrds and any printing related activity.
+                        </p>
+                        <h3>
+                            Scroll through our works and <span class="font-xlarge "><a href="#"
+                                    class="text-decoration-none text-white">engage us</a></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="bg-main-light pb-5">
+    <div class="container front py-5">
+        <div class="row text-center">
+            <div class="col-md-12 text-center align-items-center  justify-content-center d-flex flex-column">
+
+                <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active font-large" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                            aria-selected="true">T-shirt Printing</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link font-large" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">Large
+                            Format</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link font-large" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                            aria-selected="false">Books</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link font-large" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#awards" type="button" role="tab" aria-controls="contact"
+                            aria-selected="false">Awards</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link font-large" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#general" type="button" role="tab" aria-controls="contact"
+                            aria-selected="false">General
+                            Printing</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-5" id="myTabContent">
+                    <!-- T-Shirt printing Tab -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                        <ul class="nav nav-tabs  bg-main" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active inner-font" id="embroding-tab"
+                                    data-bs-toggle="tab" data-bs-target="#embroiding" type="button" role="tab"
+                                    aria-controls="embroding" aria-selected="true">Embroiding</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link inner-font" id="heatpress-tab" data-bs-toggle="tab"
+                                    data-bs-target="#heatpress" type="button" role="tab"
+                                    aria-controls="heatpress" aria-selected="false">Heat Press</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link inner-font" id="screenprint-tab" data-bs-toggle="tab"
+                                    data-bs-target="#screenprint" type="button" role="tab"
+                                    aria-controls="screeprint" aria-selected="false">Screen Print</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link inner-font" id="dtf-tab" data-bs-toggle="tab"
+                                    data-bs-target="#dtf" type="button" role="tab" aria-controls="dtf"
+                                    aria-selected="false">DTF
+                                    Printing</button>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="embroiding" role="tabpanel"
+                                aria-labelledby="embroding-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="heatpress" role="tabpanel"
+                                aria-labelledby="heatpress-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="screenprint" role="tabpanel"
+                                aria-labelledby="screenprint-tab">...</div>
+                            <div class="tab-pane fade" id="dtf" role="tabpanel" aria-labelledby="dtf-tab">...
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- large format -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <ul class="nav nav-tabs  bg-main" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active inner-font" id="banberflexy-tab"
+                                    data-bs-toggle="tab" data-bs-target="#banberflexy" type="button" role="tab"
+                                    aria-controls="embroding" aria-selected="true">Banners (Flexy) </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link inner-font" id="sticker-tab" data-bs-toggle="tab"
+                                    data-bs-target="#sticker" type="button" role="tab" aria-controls="heatpress"
+                                    aria-selected="false">Stickers (SAV)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link inner-font" id="transparent-tab" data-bs-toggle="tab"
+                                    data-bs-target="#transparent" type="button" role="tab"
+                                    aria-controls="screeprint" aria-selected="false">Trnasparent</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link inner-font" id="oneway-tab" data-bs-toggle="tab"
+                                    data-bs-target="#oneway" type="button" role="tab" aria-controls="screeprint"
+                                    aria-selected="false">One-Way</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="banberflexy" role="tabpanel"
+                                aria-labelledby="banberflexy-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/logo.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="sticker" role="tabpanel"
+                                aria-labelledby="sticker-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <div class="shadow rounded p-2 mb-2 bg-white mt-3">
+                                                <img style="height: 200px; width: 100%; border-radius: 20px; object-fit: cover;"
+                                                    class="img-fluid img-responsive"
+                                                    src="{% static 'images/Mask Group 37.png' %}" alt="">
+                                                <div class="p-4">
+                                                    <h6 class="m-0">Engineering</h6>
+                                                    <small>Delivered on: 25th July, 2022</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="screenprint" role="tabpanel"
+                                aria-labelledby="screenprint-tab">...</div>
+                            <div class="tab-pane fade" id="dtf" role="tabpanel" aria-labelledby="dtf-tab">...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- books -->
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...
+                    </div>
+
+                    <!-- awards -->
+                    <div class="tab-pane fade" id="awards" role="tabpanel" aria-labelledby="contact-tab">...
+                    </div>
+
+                    <!-- general -->
+                    <div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="contact-tab">...
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+{% endblock %}

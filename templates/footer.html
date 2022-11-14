@@ -1,0 +1,89 @@
+{% load static %}
+
+<section class="bg-main py-5 pt-5">
+    <div class="container py-5 pt-5">
+        <div class="row  align-items-start">
+
+            <div class="col-lg-3 col-md-6 col-sm-6 ln-height text-center text-md-start">
+                <p class="ln-height py-1">
+                    <span class="text-yellow font-xxlarge text-bolder">
+                        NAGY <span class="text-white">PRESS</span> <br class="m-0 p-0">
+                    </span>
+                    <span class="font-xsmall text-yellow"> AND BOOKSHOP</span> <br>
+                    <span class="font-xxsmall text-white">QUALITY, OUR PRIOPRITY</span>
+                </p>
+                <p class="text-white">
+                    <span class="text-bolder">TECH JUNCTION</span> <br>
+                    Ajacent Thywill Pharmacy
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center text-md-start">
+                <p class="text-yellow">Quick View</p>
+                <ul class="list-unstyled text-white">
+                    <li> <a href="/" class="text-decoration-none text-white">Home</a> </li>
+                    <li> <a href="{% url 'press:services' %}" class="text-decoration-none text-white">Services</a> </li>
+                    <li> <a href="{% url 'press:about' %}" class="text-decoration-none text-white">About</a> </li>
+                    <li> <a href="{% url 'press:contact' %}" class="text-decoration-none text-white">Lets Talk</a> </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center text-md-start">
+                <p class="text-yellow">Services</p>
+                <ul class="list-unstyled text-white">
+                    <li> <a href="#" class="text-decoration-none text-white">T-Shirt printing</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Large format</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Books</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">Awards</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">General Printing</a> </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3  col-sm-6 text-center text-center text-md-start">
+                <p class="text-yellow">Contact Us</p>
+                <ul class="list-unstyled text-white">
+                    <li> <a href="" class="text-decoration-none text-white">{{ configuration.site_phone1 }}</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">{{ configuration.site_phone2 }}</a> </li>
+                    <li> <a href="#" class="text-decoration-none text-white">{{ configuration.site_phone3 }}</a> </li>
+                </ul>
+                <p class="text-yellow">
+                    Email <br>
+                    <span class="text-white">
+                        {{ configuration.site_email }}
+                    </span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class=" row">
+            <div class="col-md-10 text-end">
+                <div class="d-flex align-items-end justify-content-end text-center text-md-end">
+                    <p class="text-bolder text-white px-2 pt-5">Follow US:</p>
+                    <a href="{{ configuration.instagram_url }}">
+                        <img src="{% static 'social_icons/ig.png' %}" class="social-icon">
+                    </a>
+                    <a href="{{ configuration.facebook_url }}">
+                        <img src="{% static 'social_icons/fb.png' %}" class="social-icon">
+                    </a>
+                    <a href="{{ configuration.linkdn_url }}">
+                        <img src="{% static 'social_icons/linkedin.png' %}" class="social-icon">
+                    </a>
+                    <a href="{{ configuration.youtube_url }}">
+                        <img src="{% static 'social_icons/youtube.png' %}" class="social-icon">
+                    </a>
+                    <a href="{{ configuration.twitter_url }}">
+                        <img src="{% static 'social_icons/twitter.png' %}" class="social-icon">
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="text-yellow text-center text-md-start py-4">
+            &copy; Copyright 2022 Nagypress, All Right Reserved
+        </div>
+    </div>
+
+</section>

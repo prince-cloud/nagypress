@@ -65,10 +65,10 @@ $ pipenv shell
 
 ### Docker
 
-To use Docker with PostgreSQL as the database update the `DATABASES` section of `django_project/settings.py` to reflect the following:
+To use Docker with PostgreSQL as the database update the `DATABASES` section of `nagypress/settings.py` to reflect the following:
 
 ```python
-# django_project/settings.py
+# nagypress/settings.py
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
@@ -81,7 +81,7 @@ DATABASES = {
 }
 ```
 
-The `INTERNAL_IPS` configuration in `django_project/settings.py` must be also be updated:
+The `INTERNAL_IPS` configuration in `nagypress/settings.py` must be also be updated:
 
 ```python
 # config/settings.py

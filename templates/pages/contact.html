@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row bg-main mt-5 py-5">
+        <div class="col-md-6">
+
+            <div>
+                <h1 class="text-bolder text-white pb-5 text-center">
+                    Send Message
+                </h1>
+                <div class="card p-4">
+
+                    <p class="pb-4">
+                        Get In Touch
+                    </p>
+
+                    <form action="{% url 'press:send_message' %}" method="post">
+                        {% csrf_token %}
+
+                        {{ forms | crispy }}
+
+                        <div class="d-flex justify-content-end align-items-end pt-3 ">
+                            
+                            <input type="submit" class="btn text-white btn-lg btn-bg-color" value="Submit Now">
+                        </div>
+                    </form>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-center">
+                <p class="ln-height pt-5">
+                   <span class="font-autography text-danger" style="font-size: 30px;"> contact info</span> <br>
+                   <span class="text-bolder" style="font-size: 60px;">Details</span> 
+                </p>
+                
+                <div class="address">
+                    <h3 class="text-bolder pt-4">
+                        Address
+                    </h3>
+                    <p class="">
+                        TECH JUNCTION <br>
+                        Ajacent Thywill Pharmacy
+                    </p>
+                </div>
+                <div class="phone">
+                    <h3 class="text-bolder">
+                        Phone
+                    </h3>
+                    <ul class="list-unstyled ">
+                        <li> <a href="#" class="text-decoration-none text-dark">{{ configuration.site_phone1 }}</a> </li>
+                        <li> <a href="#" class="text-decoration-none text-dark">{{ configuration.site_phone2 }}</a> </li>
+                        <li> <a href="#" class="text-decoration-none text-dark">{{ configuration.site_phone3 }}</a> </li>
+                    </ul>
+                </div>
+                <div class="email">
+                    <h3 class="text-bolder">
+                        Email
+                    </h3>
+                    <ul class="list-unstyled ">
+                        <li> <a href="#" class="text-decoration-none text-dark">
+                            {{ configuration.site_email }}
+                            </a> </li>
+                    </ul>
+                </div>
+
+                <div class="text-center pt-5 pb-3">
+                    <h3 class="text-bolder">
+                        Follw Us
+                    </h3>
+                    <div class="d-flex align-items-center justify-content-center text-center">
+                        <br>
+                        <a href="{{ configuration.instagram_url }}">
+                            <img src="{% static 'social_icons/ig.png' %}" class="social-icon">
+                        </a>
+                        <a href="{{ configuration.facebook_url }}">
+                            <img src="{% static 'social_icons/fb.png' %}" class="social-icon">
+                        </a>
+                        <a href="{{ configuration.linkdn_url }}">
+                            <img src="{% static 'social_icons/linkedin.png' %}" class="social-icon">
+                        </a>
+                        <a href="{{ configuration.youtube_url }}">
+                            <img src="{% static 'social_icons/youtube.png' %}" class="social-icon">
+                        </a>
+                        <a href="{{ configuration.twitter_url }}">
+                            <img src="{% static 'social_icons/twitter.png' %}" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}

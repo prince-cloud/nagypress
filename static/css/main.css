@@ -1,0 +1,183 @@
+@font-face { font-family: Poppins; src: url('../fonts/Poppins-Regular.ttf'); } 
+@font-face { font-family: Delicious; font-weight: bold; src: url('../fonts/Poppins-Bold.ttf');}
+@font-face { font-family: Delicious; font-weight: light; src: url('../fonts/Poppins-Light.ttf');}
+@font-face { font-family: Autography; src: url('../fonts/Autography.otf');}
+
+body {
+    font-size: 14px;
+    font-family: "Poppins", serif;
+}
+.bg-main {
+    background-color: #472B4D;
+}
+.bg-main-light {
+    background-color: rgba(71, 43, 77, 0.1);
+}
+.text-main {
+    color: #472B4D;
+}
+.text-color-secondary {
+    color:rgb(30, 4, 125);
+}
+.bg-color-secondary {
+    background-color:#7a55bb;
+}
+.back {
+    
+    padding: 40px;
+    position: absolute;
+    top: 0%;
+    bottom: 30%;
+    width: 100%;
+}
+.triangle {
+    clip-path: polygon(21px 100%, 10px 0, 32px  0);
+
+
+    background-color:#7a55bb;
+
+}
+
+.clip {
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+}
+.clip-top{
+    clip-path: polygon(0% 0%, 100% 0, 100% 83%, 0% 100%);
+}
+
+.feature-card{
+    box-shadow: 0 5px  10px rgba(0,0,0,.2);
+    text-align: center;
+    padding: 40px 10px 10px;
+    position: relative;
+    background-color: white;
+}
+.feature-card-icon {
+    background-color: rgb(127, 99, 229);
+    padding: 5px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 25px);
+}
+.feature-card-title {
+    font-weight: bold;
+}
+.feature-card-body{
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+.footer{
+    height: 400px;
+}
+
+.ln-height{
+    line-height: 1;
+}
+
+.text-yellow{
+    color: yellow;
+}
+
+.font-xsmall{
+    font-size: 14px;
+}
+
+.font-xxsmall{
+    font-size: 10px;
+}
+
+.font-xxlarge{
+    font-size: 30px;
+}
+
+.font-xsmall{
+    font-size: 13px;
+}
+
+.text-bolder{
+    font-weight: bolder;
+}
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    padding-left: 4px;
+}
+
+.font-xlarge{
+    font-size: 60px;
+}
+
+.font-large{
+    font-size: 25px;
+    color: black;
+}
+
+.inner-font{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.inner-font:hover{
+    color: white;
+}
+
+.team-card{
+    height: 200px;
+    position:  relative;
+}
+
+.team-name-card{
+    position: absolute;
+    transition: width 1s;
+    top: 140px;
+    z-index: 10;
+    width: 80%;
+    height: 100px;
+    /* left: 20px; */
+}
+
+.team-name-card:hover{
+    width: 100%;
+    size: 400px;
+    transition: width 1s;
+    font-size: 16px;
+    height: 110px;
+    background-color: #fbe7ff;
+}
+
+.see-profile{
+    display: none;
+}
+
+.team-name-card:hover .see-profile{
+    display: block;
+}
+
+.team-social:hover{
+    justify-content: left;
+}
+
+.btn-bg-color{
+    background-color: #BB5ECF;
+}
+
+.font-autography{
+    font-family: 'Autography', serif;
+}
+
+@media only screen and (max-device-width: 620px){
+    .discount{
+        display: none;
+    }
+    .responsive-h{
+        height: 150px;
+    }
+}

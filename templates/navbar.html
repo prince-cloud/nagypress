@@ -1,0 +1,46 @@
+{% load static %}
+
+<header>
+    <div class="container">
+        <div class="d-flex justify-content-end py-2">
+            <p class="px-3 m-0">Call us: {{ configuration.site_phone1 }} or {{ configuration.site_phone2 }}</p>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-main navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <div class="d-flex flex-row align-items-center">
+                    <img class="img-fluid img-responsive" style="height: 50px;" src="{% static 'images/logo.png' %}">
+                    <div class="d-flex flex-column align-items-center" style="font-size: 16px;">
+                        <p class="m-0 fw-bold">NAGY PRESS</p>
+                        <small style="font-size: 10px; ">AND BOOKSHOP</small>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'press:services' %}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'press:about' %}">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="{% url 'press:contact' %}">
+                            <span class="btn btn-sm btn-light text-uppercase">Let's talk</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

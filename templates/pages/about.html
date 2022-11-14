@@ -1,7 +1,152 @@
-{% extends '_base.html' %}
+{% extends 'base.html' %}
 
-{% block title %}About page{% endblock %}
+{% load static %}
 
 {% block content %}
-<h1>About page</h1>
-{% endblock content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="{% static 'images/aboutus.png' %}" alt=""
+                style="width: 100%; height: 300px; object-fit: contain;">
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="shadow container show-sm">
+        <p class="p-3">
+            <span class="text-bolder">NAGY PRESS AND BOOKSHOP</span> is a registered private business entity that is
+            into
+            website development, graphic designing
+            printing and supply of customized t-shirts, cloth laboratory coats, books, receipts, pens, key holders,
+            wrist
+            bands,
+            posters, banners, invitation cards, brooches, ID cards and any printing related activity. It is established
+            in
+            Kumasi
+            (Ashanti Region) with a branch at Nsawkaw (Bono Region). Financial institutions, universities, colleges,
+            private schools,
+            corporate bodies and students' associations are at the center of our operations. We have over the years been
+            supplying the
+            souvenirs of the students of Kwame Nkrumah University of Science and Technology (KNUST), University of Cape
+            Coast (UCC).
+            University of Development Studies (UDS), University of Renewable and Natural Resources (UENR), Sunyani
+            Technical University
+            (STU), Koforidua Technical University (KTU). Kintampo College of Health (COHK), Bolgatanga Technical
+            University (BTU),
+            Kumasi Technical University (KSTU). ST. Louis College of Education, and other corporate associations or
+            institutions including
+            BACSOD Ltd, Flip In Ltd, Graduate Students Association of Ghana (GRASAG), National Union of Ghana Students
+            (NUGS), Campus
+            Christians Fellowship (CCF), Pax Romana, Young Professionals and Youth Coalition 'YPYC) and many more.
+
+            <br>
+            <br>
+
+            We have good track records as far as quality, customer satisfaction, trustworthiness and punctuality in
+            business is concerned.
+            We deliver quality items, affordable and on time no matter your location. We would appreciate it so much if
+            you will give us
+            the opportunity to serve you with the best quality designs, products and services.
+
+            <br>
+
+            <span class="text-bolder">Thank you and hoping to hear favorably from you.</span>
+
+
+        </p>
+    </div>
+</section>
+
+<section class="position-relative ">
+    <div class="container front py-5">
+        <div class="d-flex text-center align-items-center flex-column">
+            <p class="m-0 text-curved font-autography" style="font-size: 40px;">Meet Our Team</p>
+            <h2 class="fw-bold">Meet Our exclusive <br> Team Members</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 p-3  text-center">
+                {% for worker in workers %}
+                <div class="mb-4 team-card text-center d-flex flex-column align-items-center">
+                    <div class="card" style="width: 100%;">
+                        <img src="{{ worker.image.url }}" alt="" srcset=""
+                            style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card team-name-card py-3 text-center">
+                        <p class="text-bolder">
+                            {{ worker.full_name }} <br>
+                            <span class="font-xsmall">{{ worker.position }}</span>
+                        <div
+                            class="pt-0 mt-0 d-flex flex-row text-center align-items-center justify-content-center team-social">
+                            <a class="text-dark" href="{{ worker.instagram_url }}"><i class="fa-brands fa-linkedin-in p-2"></i></a>
+                            <a class="text-dark" href="{{ worker.whatsapp_url }}"><i class="fa-brands fa-instagram p-2"></i></a>
+                            <a class="text-dark" href="{{ worker.linkedin_url }}"><i class="fa-brands fa-whatsapp p-2"></i></a>
+                            <span class="see-profile font-xxsmall">view profile</span>
+                        </div>
+                        </p>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+
+<br>
+<section class="bg-main text-white py-5">
+    <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <div class="container">
+                    <p class="font-autography" style="font-size: 40px;">Choose our services</p>
+                    <h2 class="pb-3" style="font-size:62px;">Explore Printing <br> Services</h2>
+                    <a href="#" class="btn btn-outline-light btn-lg rounded-pill btnstyle">
+                        Read More
+                    </a>
+                    <div class="row mt-4">
+                        <div class="col-md-6 font-large text-white">
+                            <span> <i class="fa-sharp fa-solid fa-square-check text-yellow"></i> </span> Embroidery
+                            Services
+                        </div>
+                        <div class="col-md-6 font-large text-white">
+                            <span> <i class="fa-sharp fa-solid fa-square-check text-yellow"></i> </span> Large Format
+                        </div>
+                        <div class="col-md-6 font-large text-white">
+                            <span> <i class="fa-sharp fa-solid fa-square-check text-yellow"></i> </span> T-Shirt
+                            Printing
+                        </div>
+                        <div class="col-md-6 font-large text-white">
+                            <span> <i class="fa-sharp fa-solid fa-square-check text-yellow"></i> </span> Large Format
+                        </div>
+                        <div class="col-md-6 font-large text-white">
+                            <span> <i class="fa-sharp fa-solid fa-square-check text-yellow"></i> </span> Award Plaques
+                        </div>
+                        <div class="col-md-6 font-large text-white">
+                            <span> <i class="fa-sharp fa-solid fa-square-check text-yellow"></i> </span> General
+                            Printing
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 h-100">
+                <img class="img-fluidd" src="{% static 'images/large_print.png' %}" alt=""
+                    style="height: 400px; width: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <div class="container" style="height: 140px;">
+    </div>
+</section>
+
+{% endblock %}
